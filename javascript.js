@@ -18,7 +18,7 @@ console.log(ComputerDecision())
 let userChoiceOne;
 userChoiceOne=prompt("Make a choice")
 let userChoice=userChoiceOne.toLowerCase()
-for (; userChoice!=="rock"; ) {
+for (; userChoice!=="rock" && userChoice!=="paper"; ) {
     {userChoiceOne=prompt("Choose either rock, paper, or scissors")
     userChoice=userChoiceOne.toLowerCase()}
 }
