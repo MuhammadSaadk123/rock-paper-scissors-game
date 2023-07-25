@@ -3,6 +3,8 @@ let outcome;
 let computerDecision;
 let computerScore=0;
 let playerScore=0;
+let userChoiceOne;
+let userChoice;
 //Create a function that randomizes a choice for the computer
 function ComputerDecision() {
 let getComputerChoice=Math.floor(Math.random() * 3)
@@ -53,7 +55,6 @@ function playRound(ComputerDecision, userChoice) {
  //Loop a game between the computer and the user until either the computer or the user has one five times
  for (; playerScore<5 && computerScore<5;) {
 ComputerDecision()
-console.log(computerSelection)
 userChoiceOne=prompt("Make a choice")
 userChoice=userChoiceOne.toLowerCase()
 for (; userChoice!=="rock" && userChoice!=="paper" && userChoice!="scissors"; ) {
