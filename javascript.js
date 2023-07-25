@@ -15,10 +15,12 @@ return computerSelection
 }
 console.log(ComputerDecision())
 //Create a variable that prompts a choice from the user
-let userChoice;
-userChoice=prompt("Make a choice")
-for (; userChoice!="rock"; ) {
-    userChoice=prompt("Choose either rock, paper, or scissors")
+let userChoiceOne;
+userChoiceOne=prompt("Make a choice")
+let userChoice=userChoiceOne.toLowerCase()
+for (; userChoice!=="rock"; ) {
+    {userChoiceOne=prompt("Choose either rock, paper, or scissors")
+    userChoice=userChoiceOne.toLowerCase()}
 }
 alert(userChoice)
 //Create a function that simulates a round between the computer and the user
